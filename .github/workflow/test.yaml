@@ -1,0 +1,15 @@
+name: ls on release
+
+on:
+  release:
+    type: [created]
+
+jobs:
+  test:
+    name: Try launching pipeline
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: List files
+        run: ls
