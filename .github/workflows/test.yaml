@@ -2,7 +2,7 @@ name: ls on release
 
 on:
   release:
-    type: [published]
+    types: [published]
 
 jobs:
   test:
